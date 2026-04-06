@@ -22,22 +22,26 @@ Database: PostgreSQL
 
 DevOps: Docker, Docker Compose
 
-📦 Project Structure
+## 📂 Project Structure
+
+```text
 .
 ├── 📂 client                # Vue.js frontend application
 │   ├── 📂 src
 │   │   ├── 📂 components    # Reusable UI components
-│   │   └── 📄 main.js       # Entry point
-│   ├── 📄 Dockerfile        # Frontend containerization
+│   │   └── 📄 main.js       # Frontend entry point
+│   ├── 📄 Dockerfile        # Frontend containerization logic
 │   └── 📄 package.json
-├── 📂 server                # Backend API & Database logic
+├── 📂 server                # Node.js/Express backend & Database logic
 │   ├── 📂 config            # DB connections & environment setup
 │   ├── 📂 routes            # API endpoints & validation logic
-│   ├── 📄 Dockerfile        # Backend containerization
+│   ├── 📄 Dockerfile        # Backend containerization logic
 │   └── 📄 index.js          # Server entry point
 ├── 📄 docker-compose.yml    # Orchestrates Client, Server, and Postgres
 ├── 📄 .gitignore
 └── 📄 README.md
+```
+
 🛠️ Getting Started
 Prerequisites
 Docker
@@ -48,13 +52,17 @@ Installation & Running
 Clone the repository:
 
 Bash
+```code
 git clone https://github.com/your-username/survey-management-system.git
 cd survey-management-system
+```
 Spin up the containers:
 Use Docker Compose to build and start the front-end, back-end, and database services simultaneously:
 
 Bash
+```code
 docker-compose up --build
+```
 Access the Application:
 
 Front-end: http://localhost:8080 (or your configured port)
