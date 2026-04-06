@@ -23,7 +23,6 @@ Database: PostgreSQL
 DevOps: Docker, Docker Compose
 
 📦 Project Structure
-Plaintext
 ├── frontend/          # Vue.js application
 ├── backend/           # API and server-side logic
 ├── database/          # Database configuration and migrations
