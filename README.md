@@ -23,11 +23,21 @@ Database: PostgreSQL
 DevOps: Docker, Docker Compose
 
 📦 Project Structure
-├── frontend/          # Vue.js application
-├── backend/           # API and server-side logic
-├── database/          # Database configuration and migrations
-├── docker-compose.yml # Multi-container orchestration
-└── README.md
+.
+├── 📂 client                # Vue.js frontend application
+│   ├── 📂 src
+│   │   ├── 📂 components    # Reusable UI components
+│   │   └── 📄 main.js       # Entry point
+│   ├── 📄 Dockerfile        # Frontend containerization
+│   └── 📄 package.json
+├── 📂 server                # Backend API & Database logic
+│   ├── 📂 config            # DB connections & environment setup
+│   ├── 📂 routes            # API endpoints & validation logic
+│   ├── 📄 Dockerfile        # Backend containerization
+│   └── 📄 index.js          # Server entry point
+├── 📄 docker-compose.yml    # Orchestrates Client, Server, and Postgres
+├── 📄 .gitignore
+└── 📄 README.md
 🛠️ Getting Started
 Prerequisites
 Docker
